@@ -6,6 +6,10 @@ import Button from "./Button.jsx";
 import Student from "./Students.jsx";
 import UserGreeting from "./UserGreeting.jsx";
 import List from "./List.jsx";
+import B1tton from "./B1tton.jsx";
+import ProfilePicture from "./profilePicture.jsx";
+import MyComponent from "./MyComponent.jsx";
+import Counter from "./Counter.jsx";
 
 function App() {
   const fruits = [{id: 1, name:"apple", calories: 95}, 
@@ -24,11 +28,15 @@ function App() {
     <>
       <Header />
       <Button />
+      <B1tton />
       <Card />
       <Card />
+      <Counter />
       <Food />
       {fruits.length > 0 && <List items={fruits} category="Fruits"/>}
       {vegetables.length > 0 && <List items={vegetables} category="Vegetables"/>}
+      <MyComponent />
+      <ProfilePicture />
       <Student name="Spongebob" age={30} isStudent={true} />
       <Student name="Patrick" age={42} isStudent={false} />
       <Student name="Squiddward" age={50} isStudent={false} />
