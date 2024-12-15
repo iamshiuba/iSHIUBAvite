@@ -7,38 +7,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.logo {
-  width: 50px;
-  cursor: pointer;
-  transition: transform 0.5s ease-in-out;
+.navbar-container {
+  display: flex;
 }
 
-.navbar-brand {
-  cursor: pointer;
-  transition: transform 0.5s ease-in-out;
-}
-
-.logo:hover, .navbar-brand:hover {
-  transform: scale(0.9);
+.nav-column {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .nav-item {
-  background-color: hsla(0, 100%, 50%, 0.1);
-  border-radius: 10px;
-  margin: 5px;
-}
-
-.nav-item:hover {
-  background-color: hsla(0, 100%, 50%, 0.2);
-}
-
-.nav-link {
-  padding: 0.5em;
-  transition: transform 0.3s ease-in-out;
-  color: hsla(0, 100%, 50%, 0.8);
-}
-
-.nav-link:hover {
-  transform: scale(0.9);
-  text-shadow: 0 4px 5px hsla(0, 0%, 50%, 0.753);
+  display: inline-flex;
 }
